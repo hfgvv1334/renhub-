@@ -95,7 +95,7 @@ wait(1)
 
 if game.CoreGui.RobloxGui:FindFirstChild("Voice Chat Ui") then game.CoreGui.RobloxGui:FindFirstChild("Voice Chat Ui"):Destroy() end
 local library = {RainbowColorValue = 0, HueSelectionPosition = 0}
-local PresetColor = Color3.fromRGB(255, 255, 0)
+local PresetColor = Color3.fromRGB(255, 0, 0)
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -227,15 +227,15 @@ function library:Window(name,game)
 		ColorIIIIIII = getgenv().Theme.Slider.LeftColor
 		ColorIIIIIIII = getgenv().Theme.Slider.RightColor
 	else
-		ColorII = Color3.fromRGB(255, 255, 0)
+		ColorII = Color3.fromRGB(255, 0, 0)
 
-		ColorIII = Color3.fromRGB(255, 255, 0)
+		ColorIII = Color3.fromRGB(255, 0, 0)
 		ColorIIII = Color3.fromRGB(0, 0, 255)
 
-		ColorIIIII = Color3.fromRGB(255, 255, 0)
+		ColorIIIII = Color3.fromRGB(255, 0, 0)
 		ColorIIIIII = Color3.fromRGB(0, 0, 255)
 
-		ColorIIIIIII = Color3.fromRGB(255, 255, 0)
+		ColorIIIIIII = Color3.fromRGB(255, 0, 0)
 		ColorIIIIIIII = Color3.fromRGB(0, 0, 255)
 	end
 
@@ -297,7 +297,7 @@ function library:Window(name,game)
 	Toggleui.Size = UDim2.new(0, 120, 0, 30)
 	Toggleui.Font = Enum.Font.SourceSansSemibold
 	Toggleui.Text = "[ Right Control ]"
-	Toggleui.TextColor3 = Color3.fromRGB(255, 255, 0)
+	Toggleui.TextColor3 = Color3.fromRGB(255, 0, 0)
 	Toggleui.TextSize = 20.000
 
 	HideTab.Name = "HideTab"
@@ -347,8 +347,8 @@ function library:Window(name,game)
 	TabSet.Font = Enum.Font.SourceSansSemibold
 	TabSet.PlaceholderText = "Search : ..."
 	TabSet.Text = ""
-	TabSet.TextColor3 = Color3.fromRGB(255, 255, 0)
-	TabSet.PlaceholderColor3 = Color3.fromRGB(255, 255, 0)
+	TabSet.TextColor3 = Color3.fromRGB(255, 0, 0)
+	TabSet.PlaceholderColor3 = Color3.fromRGB(255, 0, 0)
 	TabSet.TextSize = 18.000
 	TabSet.ClipsDescendants = true
 
@@ -577,7 +577,7 @@ function library:Window(name,game)
 		SectionBorder.Size = UDim2.new(1, 2, 1, 2)
 		SectionBorder.ZIndex = 3
 		SectionBorder.Image = "rbxassetid://3570695787"
-		SectionBorder.ImageColor3 = Color3.fromRGB(255, 255, 0)
+		SectionBorder.ImageColor3 = Color3.fromRGB(255, 0, 0)
 		SectionBorder.ScaleType = Enum.ScaleType.Slice
 		SectionBorder.SliceCenter = Rect.new(100, 100, 100, 100)
 		SectionBorder.SliceScale = 0.050
@@ -785,7 +785,7 @@ function library:Window(name,game)
 				TweenService:Create(
 					Button,
 					TweenInfo.new(.2, Enum.EasingStyle.Quad),
-					{TextColor3 = Color3.fromRGB(255, 255, 0)}
+					{TextColor3 = Color3.fromRGB(255, 0, 0)}
 				):Play()
 			end)
 
@@ -933,7 +933,7 @@ function library:Window(name,game)
 
 			local function SetState(state)
 				if state then
-					TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(255, 255, 0)}):Play()
+					TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 					TweenService:Create(TickCover, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(1, -30, 0.5, -7), Size = UDim2.new(0, 0, 0, 0)}):Play()
 				elseif not state then
 					TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(185, 185, 185)}):Play()
@@ -1108,7 +1108,7 @@ function library:Window(name,game)
 					TweenService:Create(
 						Title,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{TextColor3 = Color3.fromRGB(255, 255, 0)}
+						{TextColor3 = Color3.fromRGB(255, 0, 0)}
 					):Play()
 				end
 			end)
@@ -1260,7 +1260,7 @@ function library:Window(name,game)
 				else
 					if options[presetoption] ~= nil then
 						SelectedOption = options[presetoption]
-						TitleToggle.TextColor3 = Color3.fromRGB(255, 255, 0)
+						TitleToggle.TextColor3 = Color3.fromRGB(255, 0, 0)
 						callback(options[presetoption])
 					else
 						SelectedOption = "nil"
@@ -1277,7 +1277,7 @@ function library:Window(name,game)
 					end
 					if ReturnCallBack ~= nil then
 						SelectedOption = ReturnCallBack
-						TitleToggle.TextColor3 = Color3.fromRGB(255, 255, 0)
+						TitleToggle.TextColor3 = Color3.fromRGB(255, 0, 0)
 						callback(ReturnCallBack)
 					else
 						SelectedOption = "nil"
@@ -1442,7 +1442,7 @@ function library:Window(name,game)
 					Find.Visible = false
 					TitleToggle.TextTransparency = 0
 					if SelectedOption ~= "nil" then
-						TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 0)}):Play()
+						TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 					end
 					TweenService:Create(NameDropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0, 475, 0, 30)}):Play()
 					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
@@ -1470,7 +1470,7 @@ function library:Window(name,game)
 					Find.Visible = false
 					TitleToggle.TextTransparency = 0
 					if SelectedOption ~= "nil" then
-						TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 0)}):Play()
+						TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 					end
 					TweenService:Create(NameDropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0, 475, 0, 30)}):Play()
 					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
@@ -1548,7 +1548,7 @@ function library:Window(name,game)
 				Find.Visible = false
 				TitleToggle.TextTransparency = 0
 				if SelectedOption ~= "nil" then
-					TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 0)}):Play()
+					TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 				end
 				TweenService:Create(NameDropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0, 475, 0, 30)}):Play()
 				TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
@@ -2009,7 +2009,7 @@ function library:Window(name,game)
 
 			Line.Name = "Line"
 			Line.Parent = SectionContent
-			Line.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+			Line.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			Line.BackgroundTransparency = 1.000
 			Line.Position = UDim2.new(0, 0, 0.298245609, 0)
 			Line.Size = UDim2.new(0, 475, 0, 5)
@@ -2017,7 +2017,7 @@ function library:Window(name,game)
 
 			Button.Name = "Button"
 			Button.Parent = Line
-			Button.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+			Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			Button.BackgroundTransparency = 1.000
 			Button.BorderSizePixel = 0
 			Button.ClipsDescendants = true
@@ -2067,7 +2067,7 @@ function library:Window(name,game)
 			Label.RichText = true
 			Label.Text = text
 			Label.Font = Enum.Font.SourceSansBold
-			Label.TextColor3 = Color3.fromRGB(255, 255, 0)
+			Label.TextColor3 = Color3.fromRGB(255, 0, 0)
 			Label.TextSize = 18.000
 
 			UICorner.Parent = Label
@@ -2348,7 +2348,7 @@ function library:Window(name,game)
 				TweenService:Create(
 					Button,
 					TweenInfo.new(.2, Enum.EasingStyle.Quad),
-					{TextColor3 = Color3.fromRGB(255, 255, 0)}
+					{TextColor3 = Color3.fromRGB(255, 0, 0)}
 				):Play()
 			end)
 
@@ -9779,7 +9779,7 @@ function UpdateDevilChams()
                         name.TextYAlignment = 'Top'
                         name.BackgroundTransparency = 1
                         name.TextStrokeTransparency = 0.5
-                        name.TextColor3 = Color3.fromRGB(255, 255, 0)
+                        name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
                     else
                         v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
@@ -9813,14 +9813,14 @@ function UpdateFlowerChams()
                         name.TextYAlignment = 'Top'
                         name.BackgroundTransparency = 1
                         name.TextStrokeTransparency = 0.5
-                        name.TextColor3 = Color3.fromRGB(255, 255, 0)
+                        name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         if v.Name == "Flower1" then 
                             name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
                             name.TextColor3 = Color3.fromRGB(0, 0, 255)
                         end
                         if v.Name == "Flower2" then
                             name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
-                            name.TextColor3 = Color3.fromRGB(255, 255, 0)
+                            name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         end
                     else
                         v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
@@ -9853,7 +9853,7 @@ function UpdateRealFruitChams()
                     name.TextYAlignment = 'Top'
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
-                    name.TextColor3 = Color3.fromRGB(255, 255, 0)
+                    name.TextColor3 = Color3.fromRGB(255, 0, 0)
                     name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
                 else
                     v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
