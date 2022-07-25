@@ -1018,20 +1018,20 @@ function library:Window(name,game)
 
 			SliderBackground.Name = "SliderBackground"
 			SliderBackground.Parent = SliderName
-			SliderBackground.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+			SliderBackground.BackgroundColor3 = Color3.fromRGB(122, 252, 255)
 			SliderBackground.BackgroundTransparency = 1.000
 			SliderBackground.Position = UDim2.new(0.0199999996, 0, 0.699999988, 0)
 			SliderBackground.Size = UDim2.new(0, 450, 0, 4)
 			SliderBackground.ZIndex = 5
 			SliderBackground.Image = "rbxassetid://3570695787"
-			SliderBackground.ImageColor3 = Color3.fromRGB(55, 55, 55)
+			SliderBackground.ImageColor3 = Color3.fromRGB(122, 252, 255)
 			SliderBackground.ScaleType = Enum.ScaleType.Slice
 			SliderBackground.SliceCenter = Rect.new(100, 100, 100, 100)
 			SliderBackground.SliceScale = 0.150
 
 			SliderIndicator.Name = "SliderIndicator"
 			SliderIndicator.Parent = SliderBackground
-			SliderIndicator.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+			SliderIndicator.BackgroundColor3 = Color3.fromRGB(122, 252, 255)
 			SliderIndicator.BackgroundTransparency = 1.000
 			SliderIndicator.Size = UDim2.new(((StartingValue or minimumvalue) - minimumvalue) / (maximumvalue - minimumvalue), 0, 1, 0)
 			SliderIndicator.ZIndex = 5
@@ -1056,13 +1056,13 @@ function library:Window(name,game)
 
 			SliderValue.Name = "SliderValue"
 			SliderValue.Parent = SliderName
-			SliderValue.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+			SliderValue.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			SliderValue.BackgroundTransparency = 1.000
 			SliderValue.Position = UDim2.new(0.899999976, -7, 0.400000006, -12)
 			SliderValue.Size = UDim2.new(0, 40, 0, 19)
 			SliderValue.ZIndex = 5
 			SliderValue.Image = "rbxassetid://3570695787"
-			SliderValue.ImageColor3 = Color3.fromRGB(65, 65, 65)
+			SliderValue.ImageColor3 = Color3.fromRGB(255, 0, 0)
 			SliderValue.ScaleType = Enum.ScaleType.Slice
 			SliderValue.SliceCenter = Rect.new(100, 100, 100, 100)
 			SliderValue.SliceScale = 0.030
@@ -1690,12 +1690,12 @@ function library:Window(name,game)
 
 			RValue.Name = "RValue"
 			RValue.Parent = ColorPicker
-			RValue.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+			RValue.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			RValue.Position = UDim2.new(0, 195, 0, 10)
 			RValue.Size = UDim2.new(0, 42, 0, 19)
 			RValue.ZIndex = 10
 			RValue.Image = "rbxassetid://3570695787"
-			RValue.ImageColor3 = Color3.fromRGB(65, 65, 65)
+			RValue.ImageColor3 = Color3.fromRGB(255, 0, 0)
 			RValue.ScaleType = Enum.ScaleType.Slice
 			RValue.SliceCenter = Rect.new(100, 100, 100, 100)
 			RValue.SliceScale = 0.030
@@ -1713,12 +1713,12 @@ function library:Window(name,game)
 
 			GValue.Name = "GValue"
 			GValue.Parent = ColorPicker
-			GValue.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+			GValue.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			GValue.Position = UDim2.new(0, 195, 0, 35)
 			GValue.Size = UDim2.new(0, 42, 0, 19)
 			GValue.ZIndex = 10
 			GValue.Image = "rbxassetid://3570695787"
-			GValue.ImageColor3 = Color3.fromRGB(65, 65, 65)
+			GValue.ImageColor3 = Color3.fromRGB(255, 0, 0)
 			GValue.ScaleType = Enum.ScaleType.Slice
 			GValue.SliceCenter = Rect.new(100, 100, 100, 100)
 			GValue.SliceScale = 0.030
@@ -1736,12 +1736,12 @@ function library:Window(name,game)
 
 			BValue.Name = "BValue"
 			BValue.Parent = ColorPicker
-			BValue.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+			BValue.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			BValue.Position = UDim2.new(0, 195, 0, 60)
 			BValue.Size = UDim2.new(0, 42, 0, 19)
 			BValue.ZIndex = 10
 			BValue.Image = "rbxassetid://3570695787"
-			BValue.ImageColor3 = Color3.fromRGB(65, 65, 65)
+			BValue.ImageColor3 = Color3.fromRGB(255, 0, 0)
 			BValue.ScaleType = Enum.ScaleType.Slice
 			BValue.SliceCenter = Rect.new(100, 100, 100, 100)
 			BValue.SliceScale = 0.030
@@ -1798,7 +1798,7 @@ function library:Window(name,game)
 			CheckboxOutline.Size = UDim2.new(0, 24, 0, 24)
 			CheckboxOutline.ZIndex = 10
 			CheckboxOutline.Image = "http://www.roblox.com/asset/?id=5416796047"
-			CheckboxOutline.ImageColor3 = Color3.fromRGB(65, 65, 65)
+			CheckboxOutline.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
 			CheckboxTicked.Name = "CheckboxTicked"
 			CheckboxTicked.Parent = Toggle
@@ -1808,7 +1808,7 @@ function library:Window(name,game)
 			CheckboxTicked.Size = UDim2.new(0, 24, 0, 24)
 			CheckboxTicked.ZIndex = 10
 			CheckboxTicked.Image = "http://www.roblox.com/asset/?id=5416796675"
-			CheckboxTicked.ImageColor3 = Color3.fromRGB(65, 65, 65)
+			CheckboxTicked.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
 			TickCover.Name = "TickCover"
 			TickCover.Parent = Toggle
@@ -1846,7 +1846,7 @@ function library:Window(name,game)
 			HueSelection.ScaleType = Enum.ScaleType.Fit
 
 			Frame.Parent = ColorPicker
-			Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+			Frame.BackgroundColor3 = Color3.fromRGB(122, 252, 255)
 			Frame.Position = UDim2.new(0.39, 0, 0.0799999982, 0)
 			Frame.Size = UDim2.new(0, 2, 0, 100)
 			Frame.ZIndex = 10
@@ -1854,7 +1854,7 @@ function library:Window(name,game)
 			UICorner_2.Parent = Frame
 
 			Frame_2.Parent = ColorPicker
-			Frame_2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+			Frame_2.BackgroundColor3 = Color3.fromRGB(122, 252, 255)
 			Frame_2.Position = UDim2.new(0.57, 0, 0.055999998, 0)
 			Frame_2.Size = UDim2.new(0, 2, 0, 100)
 			Frame_2.ZIndex = 10
@@ -1985,8 +1985,8 @@ function library:Window(name,game)
 					callback(ColorPickerToggle.ImageColor3)
 					TweenService:Create(RainbowToggleTitle, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(69, 255, 1)}):Play()
 					TweenService:Create(TickCover, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(0.5, -7, 0.5, -7), Size = UDim2.new(0, 14, 0, 14)}):Play()
-					TweenService:Create(CheckboxOutline, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {ImageColor3 = Color3.fromRGB(65, 65, 65)}):Play()
-					TweenService:Create(CheckboxTicked, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {ImageColor3 = Color3.fromRGB(65, 65, 65)}):Play()
+					TweenService:Create(CheckboxOutline, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {ImageColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+					TweenService:Create(CheckboxTicked, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {ImageColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 				end
 			end)
 			ColorPickerToggle.MouseButton1Click:Connect(function()
