@@ -4392,7 +4392,7 @@ spawn(function()
         end)
     end
 end)
-local Main = library:Window("Ren","Blox Fruit 17.07")
+local Main = library:Window("Ren","Blox Fruit 17.2")
 local AutoFarmTab = Main:Tab("Auto Farm")
 local MainAutoFarmFunction = AutoFarm(Ms,NameQuest,LevelQuest,NameMon,CFrameMon,CFrameQuest,"AutoFarmLevel")
 spawn(function()
@@ -9853,7 +9853,7 @@ function UpdateRealFruitChams()
                     name.TextYAlignment = 'Top'
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
-                    name.TextColor3 = Color3.fromRGB(0, 255, 0)
+                    name.TextColor3 = Color3.fromRGB(255, 0, 0)
                     name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
                 else
                     v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
@@ -9914,7 +9914,7 @@ function UpdateRealFruitChams()
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
                     name.TextColor3 = Color3.fromRGB(251, 255, 0)
-                    name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
+                    name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' cặc')
                 else
                     v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
                 end
@@ -9986,7 +9986,7 @@ spawn(function()
     end
 end)
 MiscTab:Line()
-MiscTab:Label("Auto Farm Level Lock")
+MiscTab:Label("Khóa cấp độ cày cấp tự động")
 LockLevelValue = 2200
 OldLevel = game.Players.localPlayer.Data.Level.Value
 MiscTab:Slider("Select Level Lock",1,LockLevelValue,LockLevelValue,nil,function(value)
@@ -10039,7 +10039,7 @@ MiscTab:Line()
 MiscTab:Button("Check Ectoplasm",function()
     VLib:Notification("You have "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Ectoplasm","Check").." Ectoplasm")
 end)
-MiscTab:Button("Open Devil Shop",function()
+MiscTab:Button("Mở Shop Ác Quỷ",function()
     local args = {
         [1] = "GetFruits"
     }
@@ -10053,13 +10053,13 @@ MiscTab:Button("Open Inventory",function()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
     game.Players.localPlayer.PlayerGui.Main.Inventory.Visible = true
 end)
-MiscTab:Button("Open Fruit Inventory",function()
+MiscTab:Button("mở Balo Trái Ác Quỷ",function()
     game.Players.localPlayer.PlayerGui.Main.FruitInventory.Visible = true
 end)
-MiscTab:Button("Open Color Haki",function()
+MiscTab:Button("Đổi Màu Haki",function()
     game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
 end)
-MiscTab:Button("Open Title Name",function()
+MiscTab:Button("Đổi Danh Hiệu",function()
     local args = {
         [1] = "getTitles"
     }
@@ -10131,7 +10131,7 @@ MiscTab:Toggle("Dodge No Cooldown",false,function(Value)
     nododgecool = Value
     NoDodgeCool()
 end)
-MiscTab:Toggle("Soru No Cooldown",false,function(Value)
+MiscTab:Toggle("Vô Hạn R",false,function(Value)
     Sorunocool = Value
     NoSoruCool()
 end)
@@ -10143,7 +10143,7 @@ MiscTab:Toggle("Infinits Energy",infengergy,function(value)
     InfinitsEnergy = value
     infinitestam()
 end)
-MiscTab:Toggle("Infinits Range observations haki",false,function(Value)
+MiscTab:Toggle("Tầm Nhìn Vô Hạn",false,function(Value)
     infobservations = Value
 end)
 spawn(function()
@@ -10153,7 +10153,7 @@ spawn(function()
         end
     end
 end)
-MiscTab:Toggle("Auto Click",autoclick,function(value)
+MiscTab:Toggle("Tự Đám",autoclick,function(value)
     AuctoClick = value
 end)
 spawn(function()
@@ -10253,11 +10253,11 @@ function activatefly()
     end)
     start()
 end
-MiscTab:Toggle("Fly",false,function(Value)
+MiscTab:Toggle("Bay",false,function(Value)
     Fly = Value
     activatefly()
 end)
-MiscTab:Toggle("No Clip",false,function(value)
+MiscTab:Toggle("Xuyên Tường",false,function(value)
     NoClip = value
 end)
 if game.workspace:FindFirstChild("WaterWalk") then
@@ -10750,10 +10750,10 @@ ShopTab:Button("Soru [ $100,000 Beli ]",function()
     }
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
 end)
-ShopTab:Button("Buy Random Devil Fruit",function()
+ShopTab:Button("Random Fruit",function()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
 end)
-ShopTab:Toggle("Auto Random Devil Fruit",false,function(v)
+ShopTab:Toggle("Auto Random Fruit",false,function(v)
     DevilAutoBuy = v
 end)
 spawn(function()
