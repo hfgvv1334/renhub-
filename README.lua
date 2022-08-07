@@ -16748,8 +16748,8 @@ if BOKU then
     
     -- Teleport
     
-    Teleport:Toggle("Ctrl + Click = TP"," ",false,function(vu)
-        CTRL = vu
+    Teleport:Toggle("P + Click = TP"," ",false,function(vu)
+        P = vu
     end)
     Teleport:Line()
     local Plr = game:GetService("Players").LocalPlayer
@@ -16762,7 +16762,7 @@ if BOKU then
             if not Mouse.Target then
                 return
             end
-            if CTRL then
+            if P then
                 Plr.Character:MoveTo(Mouse.Hit.p)
             end
         end)
